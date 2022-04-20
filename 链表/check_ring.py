@@ -32,7 +32,9 @@ def check_ring_1(head):
 
 def check_ring_2(head):
     """
-    方法二：快慢指针，时间复杂度：O(n)；空间复杂度：O(1)
+    方法二：快慢指针法，时间复杂度：O(n)；空间复杂度：O(1)
+        先将快慢两个指针的起始位置均设置为head节点;
+        接下来，慢指针slow每次走一步，快指针fast每次走两步，如果链表中有环的结构，在不断的循环过程中，两个指针总会相遇。
     """
     fast_pointe = head
     slow_pointe = head
