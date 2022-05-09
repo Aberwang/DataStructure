@@ -19,6 +19,9 @@
 def insert_sort(ls):
     n = len(ls)
 
+    if n <= 1:
+        return ls
+
     for i in range(1, n):
         j = i
         while j > 0:
@@ -28,6 +31,7 @@ def insert_sort(ls):
             else:
                 break
     return ls
+
 
 if __name__ == "__main__":
     ls = [17, 54, 26, 93, 17, 77, 31, 44, 55, 20]
