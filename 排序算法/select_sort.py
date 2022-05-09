@@ -23,6 +23,8 @@
 
 def select_sort(ls):
     n = len(ls)
+    if n <= 1:
+        return ls
 
     # 需要进行n-1次选择操作
     for i in range(n-1):
