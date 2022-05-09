@@ -43,6 +43,9 @@ def maopao_sort(ls):
 # （改进之后的最优时间复杂度：O(n)，表示遍历一次发现没有任何可以交换的元素，原序列有序，排序结束）
 def maopao_sort2(ls):
     n = len(ls)
+    if n <= 1:
+        return ls
+
     for i in range(n):
         count = 0
         for j in range(n-i-1):
