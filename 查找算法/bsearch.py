@@ -37,7 +37,6 @@ if __name__ == "__main__":
 """
 二分查找 非递归写法
 """
-
 def bsearch(ls, data):
     """二分查找， 非递归"""
     n = len(ls)
